@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "menu.h"
+#include "menus/menu.h"
+#include "modulos/modu.h"
 
 int main(int argc, char *argv[])
 {
@@ -18,7 +19,7 @@ int main(int argc, char *argv[])
     // Menu Principal
     do
     {
-        opcion1 = MenuPrincipal;
+        opcion1 = MenuPrincipal();
 
         switch (opcion1)
         {
@@ -26,7 +27,7 @@ int main(int argc, char *argv[])
 
             do
             {
-                opcion2 = MenuProducto;
+                opcion2 = MenuProducto();
 
                 switch (opcion2)
                 {
